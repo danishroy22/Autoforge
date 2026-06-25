@@ -54,7 +54,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-base sm:text-lg md:text-xl font-light tracking-[0.3em] uppercase text-slate-300 mb-12 sm:mb-16 md:mb-20"
+          className="text-base sm:text-lg md:text-xl font-light tracking-[0.3em] uppercase text-slate-300 mb-8 sm:mb-10 md:mb-12"
         >
           Build.{" "}
           <span className="text-cyan-neon">Innovate.</span>{" "}
