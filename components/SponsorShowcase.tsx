@@ -18,7 +18,7 @@ function SponsorLogo({
   return (
     <div className="flex-shrink-0 flex items-center justify-center px-6 sm:px-10 md:px-14">
       <div
-        className={`glass-strong rounded-2xl border border-white/10 hover:border-cyan-neon/30 transition-all duration-300 hover:scale-105 glow-blue ${
+        className={`sponsor-card rounded-2xl transition-all duration-300 hover:scale-105 ${
           large
             ? "px-10 py-7 sm:px-14 sm:py-9 min-w-[200px] sm:min-w-[260px] md:min-w-[300px]"
             : "px-8 py-6 sm:px-12 sm:py-8 min-w-[180px] sm:min-w-[220px]"
@@ -27,9 +27,10 @@ function SponsorLogo({
         <Image
           src={sponsor.logo}
           alt={sponsor.name}
-          width={240}
-          height={96}
-          className={`w-auto object-contain mx-auto opacity-90 hover:opacity-100 transition-opacity ${
+          width={280}
+          height={120}
+          unoptimized
+          className={`w-auto max-w-[200px] sm:max-w-[240px] object-contain mx-auto ${
             large ? "h-14 sm:h-20 md:h-24" : "h-12 sm:h-16"
           }`}
         />
@@ -42,7 +43,7 @@ function SponsorCarousel({ large }: { large?: boolean }) {
   const doubled = [...sponsors, ...sponsors];
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full sponsor-strip py-4 sm:py-5">
       <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-24 md:w-32 z-10 bg-gradient-to-r from-black to-transparent pointer-events-none" />
       <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-24 md:w-32 z-10 bg-gradient-to-l from-black to-transparent pointer-events-none" />
 

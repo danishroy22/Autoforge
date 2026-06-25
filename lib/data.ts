@@ -97,12 +97,17 @@ export const schedule: ScheduleItem[] = [
 ];
 
 export const sponsors: Sponsor[] = [
-  { name: "22Labs", logo: "/sponsors/22labs.svg" },
-  { name: "University of Mauritius", logo: "/sponsors/umsu.svg" },
-  { name: "TechCorp", logo: "/sponsors/techcorp.svg" },
-  { name: "InnovateHub", logo: "/sponsors/innovatehub.svg" },
-  { name: "CloudNine", logo: "/sponsors/cloudnine.svg" },
-  { name: "DataForge", logo: "/sponsors/dataforge.svg" },
+  { name: "22Labs", logo: "/webp/22labs@300x.webp" },
+  { name: "Emtel", logo: "/webp/emtel@300x.webp" },
+  { name: "Doppler AI", logo: "/webp/doppler-ai.webp" },
+  { name: "Lumetryx", logo: "/webp/lumetryx_normal.webp" },
+  { name: "NexaVenu", logo: "/webp/nexavenu2.webp" },
+  { name: "Clarity", logo: "/webp/clarity.webp" },
+  { name: "Bullet", logo: "/webp/bullet.webp" },
+  { name: "Fogg", logo: "/webp/fogg.webp" },
+  { name: "KFC", logo: "/webp/kfc.webp" },
+  { name: "Pizza Inn", logo: "/webp/pizzainn.webp" },
+  { name: "Subana", logo: "/webp/subana.webp" },
 ];
 
 export const rules: Rule[] = [
