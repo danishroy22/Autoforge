@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <circle cx="25" cy="30" r="18" fill="none" stroke="#A855F7" stroke-width="2"/>
+  <circle cx="25" cy="30" r="8" fill="#A855F7" opacity="0.5"/>
+  <text x="52" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">InnovateHub</text>
+</svg>
