@@ -74,7 +74,7 @@ export default function SponsorShowcase({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.7 }}
-        className="w-full mt-10 sm:mt-14 md:mt-16"
+        className="w-full mt-6 sm:mt-8"
       >
         <p
           className="text-xs sm:text-sm md:text-base uppercase tracking-[0.25em] text-slate-400 mb-5 sm:mb-7"

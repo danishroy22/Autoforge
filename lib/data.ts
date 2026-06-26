@@ -24,6 +24,12 @@ export interface Rule {
   icon: string;
 }
 
+export const BRANDING = {
+  hackathonLogo: "/webp/hackathonlogo.webp",
+  studentUnionLogo: "/webp/sulogo.webp",
+  studentUnionName: "University of Mauritius Students' Union",
+};
+
 // Event configuration — update these for the actual event date
 export const EVENT_CONFIG = {
   // Official hackathon start (10:00 AM)
@@ -140,5 +146,11 @@ export const rules: Rule[] = [
     title: "Judges' Decision Final",
     description: "All judging decisions are final and binding.",
     icon: "⚖️",
+  },
+  {
+    id: "6",
+    title: "Follow Event Guidelines",
+    description: "Adhere to all venue rules, safety protocols, and staff instructions.",
+    icon: "📋",
   },
 ];

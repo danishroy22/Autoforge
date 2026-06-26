@@ -2,6 +2,7 @@ import LoadingScreen from "@/components/LoadingScreen";
 import ParticleField from "@/components/ParticleField";
 import AnimatedGrid from "@/components/AnimatedBackground";
 import Hero from "@/components/Hero";
+import OrganiserStrip from "@/components/OrganiserStrip";
 import Announcements from "@/components/Announcements";
 import Schedule from "@/components/Schedule";
 import HackathonRules from "@/components/HackathonRules";
@@ -15,6 +16,7 @@ export default function Home() {
         <AnimatedGrid />
         <ParticleField />
         <Hero />
+        <OrganiserStrip />
         <Announcements />
         <Schedule />
         <HackathonRules />

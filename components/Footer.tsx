@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
+import { BRANDING } from "@/lib/data";
 
 export default function Footer() {
   return (
@@ -13,22 +15,27 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          className="flex flex-col items-center"
         >
-          <h3
-            className="text-lg sm:text-xl font-bold uppercase tracking-wider text-white mb-2"
-            style={{ fontFamily: "var(--font-orbitron)" }}
-          >
-            AutoForge 12H Hackathon
-          </h3>
-          <p className="text-sm text-slate-400 mb-1">
+          <Image
+            src={BRANDING.hackathonLogo}
+            alt="UoM AutoForge Hackathon"
+            width={200}
+            height={200}
+            unoptimized
+            className="w-24 sm:w-28 h-auto mb-6 opacity-90"
+          />
+
+          <p className="text-sm text-slate-400 mb-6">
             Powered by{" "}
             <span className="text-white font-medium">22Labs</span>
           </p>
-          <p className="text-sm text-slate-500">
-            University of Mauritius Students&apos; Union
+
+          <p className="text-sm text-slate-500 mb-6">
+            {BRANDING.studentUnionName}
           </p>
 
-          <div className="mt-8 flex items-center justify-center gap-3">
+          <div className="flex items-center justify-center gap-3">
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-cyan-neon/40" />
             <span className="text-xs text-slate-600 uppercase tracking-[0.3em]">
               Build. Innovate. Transform.

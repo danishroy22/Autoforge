@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { BRANDING } from "@/lib/data";
 
 export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +23,6 @@ export default function LoadingScreen() {
           transition={{ duration: 0.6 }}
           className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black"
         >
-          {/* Background effects */}
           <div className="absolute inset-0 grid-bg opacity-30" />
           <div
             className="absolute inset-0"
@@ -37,34 +38,30 @@ export default function LoadingScreen() {
             transition={{ duration: 0.6 }}
             className="relative z-10 flex flex-col items-center"
           >
-            {/* Logo animation */}
-            <div className="relative mb-8">
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-                className="w-20 h-20 rounded-full border border-cyan-neon/20 border-t-cyan-neon"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span
-                  className="text-2xl font-black text-cyan-neon text-glow-cyan"
-                  style={{ fontFamily: "var(--font-orbitron)" }}
-                >
-                  AF
-                </span>
-              </div>
-            </div>
-
-            <h1
-              className="text-xl sm:text-2xl font-bold uppercase tracking-widest text-white mb-2"
-              style={{ fontFamily: "var(--font-orbitron)" }}
+            <motion.div
+              animate={{ scale: [1, 1.04, 1] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="mb-8"
             >
-              AutoForge
-            </h1>
-            <p className="text-xs text-slate-500 uppercase tracking-[0.4em] mb-8">
-              12H Hackathon
-            </p>
+              <Image
+                src={BRANDING.hackathonLogo}
+                alt="UoM AutoForge Hackathon"
+                width={320}
+                height={320}
+                unoptimized
+                priority
+                className="w-36 h-auto sm:w-44 drop-shadow-[0_0_40px_rgba(0,212,255,0.3)]"
+              />
+            </motion.div>
 
-            {/* Progress bar */}
+            <motion.p
+              animate={{ opacity: [0.4, 1, 0.4] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+              className="text-xs text-slate-500 uppercase tracking-[0.4em] mb-8"
+            >
+              Initializing...
+            </motion.p>
+
             <div className="w-48 h-0.5 bg-white/10 rounded-full overflow-hidden">
               <motion.div
                 initial={{ width: "0%" }}
@@ -73,14 +70,6 @@ export default function LoadingScreen() {
                 className="h-full bg-gradient-to-r from-electric-blue via-cyan-neon to-purple-neon rounded-full"
               />
             </div>
-
-            <motion.p
-              animate={{ opacity: [0.4, 1, 0.4] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-              className="mt-4 text-xs text-slate-600 uppercase tracking-widest"
-            >
-              Initializing...
-            </motion.p>
           </motion.div>
         </motion.div>
       )}
