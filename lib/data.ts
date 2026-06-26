@@ -30,16 +30,15 @@ export const BRANDING = {
   studentUnionName: "University of Mauritius Students' Union",
 };
 
-// Event configuration — update these for the actual event date
+// Event configuration
 export const EVENT_CONFIG = {
-  // Official hackathon start (10:00 AM)
+  // Hackathon start — 10:00 AM on 30 June 2026
   startHour: 10,
   startMinute: 0,
-  // Submission deadline (22:00 / 10 PM)
+  // Submission deadline — 22:00 (10 PM)
   endHour: 22,
   endMinute: 0,
-  // Set to the actual event date (YYYY-MM-DD)
-  eventDate: "2026-06-25",
+  eventDate: "2026-06-30",
 };
 
 export const announcements: Announcement[] = [

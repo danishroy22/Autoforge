@@ -69,9 +69,7 @@ function DigitBox({ value, label, index }: DigitBoxProps) {
     <div className="flex flex-col items-center gap-2 sm:gap-3">
       <div
         className="digit-box relative flex items-center justify-center rounded-xl sm:rounded-2xl px-4 py-3 sm:px-8 sm:py-6 md:px-12 md:py-8 min-w-[80px] sm:min-w-[120px] md:min-w-[160px]"
-        style={{
-          animationDelay: `${index * 0.1}s`,
-        }}
+        style={{ animationDelay: `${index * 0.1}s` }}
       >
         <span
           className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-cyan-neon text-glow-cyan tabular-nums leading-none"

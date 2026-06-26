@@ -1,3 +1,5 @@
+"use client";
+
 import LoadingScreen from "@/components/LoadingScreen";
 import ParticleField from "@/components/ParticleField";
 import AnimatedGrid from "@/components/AnimatedBackground";
