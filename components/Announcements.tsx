@@ -61,13 +61,12 @@ function AnnouncementCard({
 }
 
 export default function Announcements() {
-  const sorted = [...announcements].sort((a, b) => {
-    const timeToMinutes = (t: string) => {
-      const [h, m] = t.split(":").map(Number);
-      return h * 60 + m;
-    };
-    return timeToMinutes(b.timestamp) - timeToMinutes(a.timestamp);
-  });
+  const priorityOrder = { urgent: 0, high: 1, normal: 2 };
+  const sorted = [...announcements].sort(
+    (a, b) =>
+      priorityOrder[a.priority ?? "normal"] -
+      priorityOrder[b.priority ?? "normal"]
+  );
 
   return (
     <SectionWrapper id="announcements" className="px-4 sm:px-6 py-16 sm:py-24">

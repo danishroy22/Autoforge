@@ -142,7 +142,7 @@ export default function CountdownTimer() {
       </div>
       {!isExpired && !isBeforeStart && (
         <p className="mt-6 text-xs sm:text-sm text-slate-500 uppercase tracking-widest">
-          Until submission deadline — 22:00
+          Until demo video deadline — 22:00
         </p>
       )}
     </div>

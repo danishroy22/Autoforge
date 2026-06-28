@@ -6,8 +6,8 @@ export type EventPhase =
 
 /** Phase boundaries — client local date & time */
 export const PHASE_SCHEDULE = {
-  /** Countdown until submission window closes (30 June 2026, 23:00) */
-  awaitingResultsStart: new Date(2026, 5, 30, 23, 0, 0),
+  /** After demo video deadline (30 June 2026, 22:00) */
+  awaitingResultsStart: new Date(2026, 5, 30, 22, 0, 0),
   /** “Results will be announced shortly” (1 July 2026, 13:00) */
   resultsSoonStart: new Date(2026, 6, 1, 13, 0, 0),
   /** Celebration & winner reveal (1 July 2026, 14:00) */
