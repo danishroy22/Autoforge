@@ -113,6 +113,7 @@ export const sponsors: Sponsor[] = [
   { name: "KFC", logo: "/webp/kfc.webp" },
   { name: "Pizza Inn", logo: "/webp/pizzainn.webp" },
   { name: "Subana", logo: "/webp/subana.webp" },
+  { name: "Secret Cafetaria", logo: "/webp/secret-cafetaria.webp" },
 ];
 
 export const rules: Rule[] = [
