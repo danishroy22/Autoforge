@@ -1,0 +1,28 @@
+{
+  "winners": [
+    {
+      "id": "winner",
+      "podiumTitle": "Winner",
+      "medal": "🥇",
+      "teamName": "GACKS",
+      "projectTitle": "AutoForge Nexus",
+      "members": ["Alex Kumar", "Sarah Lee", "James Wong"]
+    },
+    {
+      "id": "first-runner-up",
+      "podiumTitle": "First Runner-up",
+      "medal": "🥈",
+      "teamName": "SINEPSIS",
+      "projectTitle": "Smart Campus Connect",
+      "members": ["Priya Ramdin", "Marc Duval", "Nisha Patel", "Jean Dupont", "Samira Ho"]
+    },
+    {
+      "id": "second-runner-up",
+      "podiumTitle": "Second Runner-up",
+      "medal": "🥉",
+      "teamName": "To Be Confirmed",
+      "projectTitle": "EcoTrack AI",
+      "members": ["David Chen", "Amelia Brown", "Rajesh Mohee", "Lisa Foo", "Tom Ng"]
+    }
+  ]
+}
