@@ -84,18 +84,6 @@ export default function Announcements() {
             />
           ))}
         </div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="mt-8 text-center text-xs text-slate-600"
-        >
-          Edit announcements in{" "}
-          <code className="text-slate-500 bg-white/5 px-1.5 py-0.5 rounded">
-            lib/data.ts
-          </code>
-        </motion.p>
       </div>
     </SectionWrapper>
   );
