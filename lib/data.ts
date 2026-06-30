@@ -224,7 +224,7 @@ export const schedule: ScheduleItem[] = scheduleDays.flatMap((d) => d.items);
 
 export const sponsors: Sponsor[] = [
   { name: "22Labs", logo: "/webp/22labs@300x.webp" },
-  { name: "Emtel", logo: "/webp/emtel@300x.webp" },
+  { name: "Emtel", logo: "/webp/emtel@300x.webp?v=2" },
   { name: "Doppler AI", logo: "/webp/doppler-ai.webp" },
   { name: "Lumetryx", logo: "/webp/lumetryx_normal.webp" },
   { name: "NexaVenu", logo: "/webp/nexavenu2.webp" },
