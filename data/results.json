@@ -4,25 +4,27 @@
       "id": "winner",
       "podiumTitle": "Winner",
       "medal": "🥇",
-      "teamName": "Team Alpha",
-      "projectTitle": "AutoForge Nexus",
-      "members": ["Alex Kumar", "Sarah Lee", "James Wong"]
+      "teamName": "Code Crusaders",
+      "members": ["Lokeshav Anand Makhum", 
+"Ayush Liladhar Ramrooch",
+"Abhay Kumar Beegoo"]
     },
     {
       "id": "first-runner-up",
       "podiumTitle": "First Runner-up",
       "medal": "🥈",
-      "teamName": "Team Beta",
-      "projectTitle": "Smart Campus Connect",
-      "members": ["Priya Ramdin", "Marc Duval", "Nisha Patel"]
+      "teamName": "FlowPilots",
+      "members": ["Kentish Thummanah", "Shruti Devi Seewoogoolam", "Alexandra Leung Dat Wan ", "Khushi Manvi Dabydoyal", "Suhaasinee Sookaul"]
     },
     {
       "id": "second-runner-up",
       "podiumTitle": "Second Runner-up",
       "medal": "🥉",
-      "teamName": "Team Gamma",
-      "projectTitle": "EcoTrack AI",
-      "members": ["David Chen", "Amelia Brown"]
+      "teamName": "Les Vacabons",
+      "members": ["Muhammad Oowais Jugon",
+      "Cheytan Hisham Hossen",
+      "Mohmmad Fahim Hosenbocus",
+      "Bhoovana Dinoo"]
     }
   ]
 }
